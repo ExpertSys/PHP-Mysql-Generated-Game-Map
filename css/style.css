@@ -1,0 +1,24 @@
+#map{
+    width:500px;
+    height:500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map_columns{
+    float:left;
+    width:70px;
+    height:70px;
+    text-align:center;
+    border:1px solid #3e7dbc;
+}
+
+.break{
+    clear:both;
+}
+
+#battle-btn{
+    position: relative;
+    margin-left:-22%;
+    margin-top:2%;
+}
