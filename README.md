@@ -6,4 +6,10 @@ I also have a function which allows the players who are on the same grid / coord
 # Notes
 Using PHP to store the map, and provide the queries wasn't the best idea but I knew that from the start.  This project along with "Era Heroes" was more of a testing experience to see how the game would run with vanilla PHP and Ajax when trying to handle user coordinates and user interaction.
 
-If I were to remake this, I would use Node.js + Mysql or MongoDB.
+If I were to remake this, I would use a mixture of the following below:
+
+Node.js + Mysql or MongoDB
+
+JS Socket IO
+
+PHP Websockets
