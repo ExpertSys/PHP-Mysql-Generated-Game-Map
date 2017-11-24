@@ -3,18 +3,16 @@
 
       public $x;
       public $y;
-      public $width = 5;
-      public $height = 5;
 
       public function __construct($x,$y){
             $this->x = $x;
             $this->y = $y;
+            $this->Connect();
       }
 
       public function createMap(){
-          for($x=0; $x < $this->width; $x++){
-              for($y=0; $y < $this->height; $y++){
-                  Database::Connect();
+          for($x=0; $x < 5; $x++){
+              for($y=0; $y < 5; $y++){
                   echo "<div id='map'>";
                   echo "<div class='map_columns' title='{$x}_{$y}' data-x='{$x}' data-y='{$y}' id='{$x}_{$y}'>";
                   $this->spawnPlayers($x,$y);
@@ -38,7 +36,6 @@
           $rows = $stmt->fetch(PDO::FETCH_ASSOC);
           if($rows){
               echo "<input type='submit' id='battle-btn' value='Fight'>";
-              /* Typically here, you can connect your battle system and what not */
           } else{
           }
        }
