@@ -7,6 +7,6 @@ $(document).ready(function(){
     });
 
     setInterval(function(){
-        $("#map").load("./reload.php");
+        $("#map").load("./inc/mapdata.php");
     }, 600);
 });
